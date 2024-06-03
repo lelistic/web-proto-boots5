@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+{% if current_user and current_user.is_authenticated %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Dashboard</h1>
+            <p>This is a simple dashboard prototype using Flask and Bootstrap 5 with a dark theme.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h2>Dashboard Values</h2>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Metric 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 1</h5>
+                    <p class="card-text">Value: 123</p>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 2</h5>
+                    <p class="card-text">Value: 456</p>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 3 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 3</h5>
+                    <p class="card-text">Value: 789</p>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 4 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 4</h5>
+                    <p class="card-text">Value: 1011</p>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 5 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 5</h5>
+                    <p class="card-text">Value: 1213</p>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 6 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 6</h5>
+                    <p class="card-text">Value: 1415</p>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 7 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 7</h5>
+                    <p class="card-text">Value: 1617</p>
+                </div>
+            </div>
+        </div>
+        <!-- Metric 8 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 8</h5>
+                    <p class="card-text">Value: 1819</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Dashboard Metrics</h2>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Metric Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card bg-secondary text-light">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <!-- Metric Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card bg-secondary text-light">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"><small>Last updated 10 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <!-- Metric Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card bg-secondary text-light">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 3</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"><small>Last updated 1 hour ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Metric Card 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card bg-secondary text-light">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 4</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"><small>Last updated 2 hours ago</small></p>
+                </div>
+            </div>
+        </div>
+        <!-- Metric Card 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card bg-secondary text-light">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 5</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"><small>Last updated 5 hours ago</small></p>
+                </div>
+            </div>
+        </div>
+        <!-- Metric Card 6 -->
+        <div class="col-md-4 mb-4">
+            <div class="card bg-secondary text-light">
+                <div class="card-body">
+                    <h5 class="card-title">Metric 6</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"><small>Last updated yesterday</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% else %}
+    <!-- Display content for non-authenticated users -->
+<div class="container">
+    <p>Please, log in.</p>
+</div>
+{% endif %}
+{% endblock %}
